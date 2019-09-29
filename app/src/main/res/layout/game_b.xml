@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GameBLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameB">
+
+    <ImageView
+        android:id="@+id/backgroundB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:keepScreenOn="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background_animals" />
+
+    <ImageView
+        android:id="@+id/cow"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="start|top"
+        android:layout_marginTop="50dp"
+        android:onClick="cowClick"
+        android:scaleType="centerCrop"
+
+        app:srcCompat="@drawable/b_cow" />
+
+    <ImageView
+        android:id="@+id/croc"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="50dp"
+        android:onClick="crocClick"
+
+        app:srcCompat="@drawable/b_crocodile" />
+
+    <ImageView
+        android:id="@+id/elephant"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="220dp"
+        android:onClick="elephClick"
+        android:scaleType="centerInside"
+
+        app:srcCompat="@drawable/b_elephant" />
+
+    <ImageView
+        android:id="@+id/hippo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="50dp"
+        android:onClick="hippoClick"
+
+        app:srcCompat="@drawable/b_hippo" />
+
+    <ImageView
+        android:id="@+id/horse"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="220dp"
+        android:onClick="horseClick"
+
+        app:srcCompat="@drawable/b_horse" />
+
+    <ImageView
+        android:id="@+id/parrot"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="220dp"
+        android:onClick="parrotClick"
+
+        app:srcCompat="@drawable/b_parrot" />
+
+    <ImageView
+        android:id="@+id/pig"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="390dp"
+        android:onClick="pigClick"
+
+        app:srcCompat="@drawable/b_pig" />
+
+    <ImageView
+        android:id="@+id/snake"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="390dp"
+        android:onClick="snakeClick"
+        android:scaleType="centerInside"
+
+        app:srcCompat="@drawable/b_snake" />
+
+    <ImageView
+        android:id="@+id/zebra"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="390dp"
+        android:onClick="zebraClick"
+
+        app:srcCompat="@drawable/b_zebra" />
+
+    <ImageView
+        android:id="@+id/giraffe"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="560dp"
+        android:onClick="giraffeClick"
+
+        app:srcCompat="@drawable/b_giraffe" />
+
+    <ImageView
+        android:id="@+id/dog"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="560dp"
+        android:onClick="dogClick"
+
+        app:srcCompat="@drawable/b_dog" />
+
+    <ImageView
+        android:id="@+id/toad"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="560dp"
+        android:onClick="toadClick"
+
+        app:srcCompat="@drawable/b_toad" />
+
+    <ImageButton
+        android:id="@+id/toMenuButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top|end"
+        android:background="@android:color/transparent"
+        android:onClick="moveToMenu"
+
+        android:scaleType="centerInside"
+        android:src="@drawable/b_to_menu" />
+
+</FrameLayout>

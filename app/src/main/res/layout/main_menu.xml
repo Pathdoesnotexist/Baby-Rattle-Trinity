@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainMenuLayout"
+    android:layout_width="410dp"
+    android:layout_height="800dp"
+    android:orientation="vertical"
+    tools:context=".MainMenu">
+
+    <ImageView
+        android:id="@+id/backgroundMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background_menu" />
+
+    <ImageView
+        android:id="@+id/LabelImage"
+        android:layout_width="410dp"
+        android:layout_height="102dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/CloudImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rattle" />
+
+    <ImageView
+        android:id="@+id/CloudImage"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LabelImage"
+        app:srcCompat="@drawable/menu_cloud" />
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:onClick="startTheGame"
+        app:layout_constraintBottom_toBottomOf="@+id/CloudImage"
+        app:layout_constraintEnd_toEndOf="@+id/CloudImage"
+        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/CloudImage"
+        app:layout_constraintVertical_bias="0.329"
+        app:srcCompat="@drawable/play_game" />
+
+    <ImageButton
+        android:id="@+id/a_game_mode"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:onClick="startA"
+        app:layout_constraintBottom_toBottomOf="@+id/CloudImage"
+        app:layout_constraintEnd_toEndOf="@+id/CloudImage"
+        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintStart_toStartOf="@+id/CloudImage"
+        app:layout_constraintTop_toTopOf="@+id/CloudImage"
+        app:layout_constraintVertical_bias="0.7"
+        app:srcCompat="@drawable/a_game_active" />
+
+    <ImageButton
+        android:id="@+id/b_game_mode"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:onClick="startB"
+        app:layout_constraintBottom_toBottomOf="@+id/CloudImage"
+        app:layout_constraintEnd_toEndOf="@+id/CloudImage"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="@+id/CloudImage"
+        app:layout_constraintTop_toTopOf="@+id/CloudImage"
+        app:layout_constraintVertical_bias="0.743"
+        app:srcCompat="@drawable/b_game_inactive" />
+
+    <ImageButton
+        android:id="@+id/c_game_mode"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:onClick="startC"
+        app:layout_constraintBottom_toBottomOf="@+id/CloudImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toStartOf="@+id/CloudImage"
+        app:layout_constraintTop_toTopOf="@+id/CloudImage"
+        app:layout_constraintVertical_bias="0.596"
+        app:srcCompat="@drawable/c_game_inactive" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

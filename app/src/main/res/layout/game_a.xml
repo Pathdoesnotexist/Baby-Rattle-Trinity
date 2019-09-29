@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GameALayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".GameA">
+
+    <ImageView
+        android:id="@+id/backgroundA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background_flowers" />
+
+    <ImageView
+        android:id="@+id/pinkFlower"
+        android:layout_width="300dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="-30dp"
+        android:layout_marginTop="50dp"
+        android:onClick="pinkGone"
+        app:srcCompat="@drawable/a_pink_flower" />
+
+    <ImageView
+        android:id="@+id/yellowFlower"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="150dp"
+        android:onClick="yellowGone"
+        app:srcCompat="@drawable/a_yellow_flower" />
+
+    <ImageView
+        android:id="@+id/blueFlower"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="-30dp"
+        android:layout_marginTop="250dp"
+        android:onClick="blueGone"
+        app:srcCompat="@drawable/a_blue_flower" />
+
+    <ImageView
+        android:id="@+id/redFlower"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="330dp"
+        android:onClick="redGone"
+        app:srcCompat="@drawable/a_red_flower" />
+
+    <ImageView
+        android:id="@+id/orangeFlower"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="-30dp"
+        android:layout_marginTop="430dp"
+        android:onClick="orangeGone"
+        app:srcCompat="@drawable/a_orange_flower" />
+
+    <ImageButton
+        android:id="@+id/toMenuButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top|end"
+        android:background="@android:color/transparent"
+        android:onClick="moveToMenu"
+        android:scaleType="centerInside"
+        android:src="@drawable/a_to_menu" />
+
+</FrameLayout>

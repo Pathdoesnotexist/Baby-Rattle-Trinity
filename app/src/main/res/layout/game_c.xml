@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GameCLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameC">
+
+    <ImageView
+        android:id="@+id/backgroundC"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background_planets" />
+
+    <ImageView
+        android:id="@+id/bluePlanet"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:onClick="blueClick"
+        app:srcCompat="@drawable/c_blue_planet" />
+
+    <ImageView
+        android:id="@+id/greenPlanet"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:onClick="greenClick"
+        app:srcCompat="@drawable/c_green_planet" />
+
+    <ImageView
+        android:id="@+id/orangePlanet"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:onClick="orangeClick"
+        app:srcCompat="@drawable/c_orange_planet" />
+
+    <ImageView
+        android:id="@+id/pinkPlanet"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:onClick="pinkClick"
+        app:srcCompat="@drawable/c_pink_planet" />
+
+    <ImageView
+        android:id="@+id/redPlanet"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:onClick="redClick"
+        app:srcCompat="@drawable/c_red_planet" />
+
+    <ImageView
+        android:id="@+id/violetPlanet"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:onClick="violetClick"
+        app:srcCompat="@drawable/c_violet_planet" />
+
+    <ImageButton
+        android:id="@+id/toMenuButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top|end"
+        android:background="@android:color/transparent"
+        android:onClick="moveToMenu"
+
+        android:scaleType="centerInside"
+        android:src="@drawable/c_to_menu" />
+
+</FrameLayout>
