@@ -13,6 +13,7 @@
         android:layout_height="match_parent"
         android:keepScreenOn="true"
         android:scaleType="centerCrop"
+        android:contentDescription="@string/background"
         app:srcCompat="@drawable/background_flowers" />
 
     <ImageView
@@ -22,6 +23,7 @@
         android:layout_marginStart="-30dp"
         android:layout_marginTop="50dp"
         android:onClick="pinkGone"
+        android:contentDescription="@string/flower"
         app:srcCompat="@drawable/a_pink_flower" />
 
     <ImageView
@@ -31,6 +33,7 @@
         android:layout_marginStart="180dp"
         android:layout_marginTop="150dp"
         android:onClick="yellowGone"
+        android:contentDescription="@string/flower"
         app:srcCompat="@drawable/a_yellow_flower" />
 
     <ImageView
@@ -40,6 +43,7 @@
         android:layout_marginStart="-30dp"
         android:layout_marginTop="250dp"
         android:onClick="blueGone"
+        android:contentDescription="@string/flower"
         app:srcCompat="@drawable/a_blue_flower" />
 
     <ImageView
@@ -49,6 +53,7 @@
         android:layout_marginStart="180dp"
         android:layout_marginTop="330dp"
         android:onClick="redGone"
+        android:contentDescription="@string/flower"
         app:srcCompat="@drawable/a_red_flower" />
 
     <ImageView
@@ -58,6 +63,7 @@
         android:layout_marginStart="-30dp"
         android:layout_marginTop="430dp"
         android:onClick="orangeGone"
+        android:contentDescription="@string/flower"
         app:srcCompat="@drawable/a_orange_flower" />
 
     <ImageButton
@@ -68,6 +74,7 @@
         android:background="@android:color/transparent"
         android:onClick="moveToMenu"
         android:scaleType="centerInside"
-        android:src="@drawable/a_to_menu" />
+        android:src="@drawable/a_to_menu"
+        android:contentDescription="@string/toMenu" />
 
 </FrameLayout>

@@ -13,6 +13,7 @@
         android:layout_height="match_parent"
         android:keepScreenOn="true"
         android:scaleType="centerCrop"
+        android:contentDescription="@string/background"
         app:srcCompat="@drawable/background_planets" />
 
     <ImageView
@@ -20,6 +21,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:onClick="blueClick"
+        android:contentDescription="@string/planet"
         app:srcCompat="@drawable/c_blue_planet" />
 
     <ImageView
@@ -27,6 +29,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:onClick="greenClick"
+        android:contentDescription="@string/planet"
         app:srcCompat="@drawable/c_green_planet" />
 
     <ImageView
@@ -34,6 +37,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:onClick="orangeClick"
+        android:contentDescription="@string/planet"
         app:srcCompat="@drawable/c_orange_planet" />
 
     <ImageView
@@ -41,6 +45,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:onClick="pinkClick"
+        android:contentDescription="@string/planet"
         app:srcCompat="@drawable/c_pink_planet" />
 
     <ImageView
@@ -48,6 +53,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:onClick="redClick"
+        android:contentDescription="@string/planet"
         app:srcCompat="@drawable/c_red_planet" />
 
     <ImageView
@@ -55,6 +61,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:onClick="violetClick"
+        android:contentDescription="@string/planet"
         app:srcCompat="@drawable/c_violet_planet" />
 
     <ImageButton
@@ -64,7 +71,7 @@
         android:layout_gravity="top|end"
         android:background="@android:color/transparent"
         android:onClick="moveToMenu"
-
+        android:contentDescription="@string/toMenu"
         android:scaleType="centerInside"
         android:src="@drawable/c_to_menu" />
 

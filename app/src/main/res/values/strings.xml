@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">BabyRattleTrinity</string>
+    <string name="rattle">Погремушка</string>
+    <string name="play">Играть</string>
+    <string name="game_a">первый режим</string>
+    <string name="game_b">второй режим</string>
+    <string name="game_c">третий режим</string>
+    <string name="flower">цветок</string>
+    <string name="toMenu">выход в меню</string>
+    <string name="animalHead">голова</string>
+    <string name="planet">планета</string>
+    <string name="background">фон экрана</string>
 </resources>

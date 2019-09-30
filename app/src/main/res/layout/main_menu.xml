@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
+        android:contentDescription="@string/background"
         app:srcCompat="@drawable/background_menu" />
 
     <ImageView
@@ -20,6 +21,7 @@
         android:layout_width="410dp"
         android:layout_height="102dp"
         android:scaleType="centerInside"
+        android:contentDescription="@string/rattle"
         app:layout_constraintBottom_toTopOf="@+id/CloudImage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,6 +32,7 @@
         android:id="@+id/CloudImage"
         android:layout_width="match_parent"
         android:layout_height="410dp"
+        android:contentDescription="@string/background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +52,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/CloudImage"
         app:layout_constraintVertical_bias="0.329"
-        app:srcCompat="@drawable/play_game" />
+        app:srcCompat="@drawable/play_game"
+        android:contentDescription="@string/play" />
 
     <ImageButton
         android:id="@+id/a_game_mode"
@@ -64,7 +68,8 @@
         app:layout_constraintStart_toStartOf="@+id/CloudImage"
         app:layout_constraintTop_toTopOf="@+id/CloudImage"
         app:layout_constraintVertical_bias="0.7"
-        app:srcCompat="@drawable/a_game_active" />
+        app:srcCompat="@drawable/a_game_active"
+        android:contentDescription="@string/game_a" />
 
     <ImageButton
         android:id="@+id/b_game_mode"
@@ -79,7 +84,8 @@
         app:layout_constraintStart_toStartOf="@+id/CloudImage"
         app:layout_constraintTop_toTopOf="@+id/CloudImage"
         app:layout_constraintVertical_bias="0.743"
-        app:srcCompat="@drawable/b_game_inactive" />
+        app:srcCompat="@drawable/b_game_inactive"
+        android:contentDescription="@string/game_b" />
 
     <ImageButton
         android:id="@+id/c_game_mode"
@@ -94,6 +100,7 @@
         app:layout_constraintStart_toStartOf="@+id/CloudImage"
         app:layout_constraintTop_toTopOf="@+id/CloudImage"
         app:layout_constraintVertical_bias="0.596"
-        app:srcCompat="@drawable/c_game_inactive" />
+        app:srcCompat="@drawable/c_game_inactive"
+        android:contentDescription="@string/game_c" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

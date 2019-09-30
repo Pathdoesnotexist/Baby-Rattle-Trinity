@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:keepScreenOn="true"
         android:scaleType="centerCrop"
+        android:contentDescription="@string/background"
         app:srcCompat="@drawable/background_animals" />
 
     <ImageView
@@ -23,7 +24,7 @@
         android:layout_marginTop="50dp"
         android:onClick="cowClick"
         android:scaleType="centerCrop"
-
+        android:contentDescription="@string/animalHead"
         app:srcCompat="@drawable/b_cow" />
 
     <ImageView
@@ -33,7 +34,7 @@
         android:layout_gravity="center_horizontal|top"
         android:layout_marginTop="50dp"
         android:onClick="crocClick"
-
+        android:contentDescription="@string/animalHead"
         app:srcCompat="@drawable/b_crocodile" />
 
     <ImageView
@@ -44,7 +45,7 @@
         android:layout_marginTop="220dp"
         android:onClick="elephClick"
         android:scaleType="centerInside"
-
+        android:contentDescription="@string/animalHead"
         app:srcCompat="@drawable/b_elephant" />
 
     <ImageView
@@ -54,7 +55,7 @@
         android:layout_gravity="top|end"
         android:layout_marginTop="50dp"
         android:onClick="hippoClick"
-
+        android:contentDescription="@string/animalHead"
         app:srcCompat="@drawable/b_hippo" />
 
     <ImageView
@@ -64,7 +65,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="220dp"
         android:onClick="horseClick"
-
+        android:contentDescription="@string/animalHead"
         app:srcCompat="@drawable/b_horse" />
 
     <ImageView
@@ -74,7 +75,7 @@
         android:layout_gravity="end"
         android:layout_marginTop="220dp"
         android:onClick="parrotClick"
-
+        android:contentDescription="@string/animalHead"
         app:srcCompat="@drawable/b_parrot" />
 
     <ImageView
@@ -84,7 +85,7 @@
         android:layout_gravity="start"
         android:layout_marginTop="390dp"
         android:onClick="pigClick"
-
+        android:contentDescription="@string/animalHead"
         app:srcCompat="@drawable/b_pig" />
 
     <ImageView
@@ -95,7 +96,7 @@
         android:layout_marginTop="390dp"
         android:onClick="snakeClick"
         android:scaleType="centerInside"
-
+        android:contentDescription="@string/animalHead"
         app:srcCompat="@drawable/b_snake" />
 
     <ImageView
@@ -105,7 +106,7 @@
         android:layout_gravity="end"
         android:layout_marginTop="390dp"
         android:onClick="zebraClick"
-
+        android:contentDescription="@string/animalHead"
         app:srcCompat="@drawable/b_zebra" />
 
     <ImageView
@@ -115,7 +116,7 @@
         android:layout_gravity="start"
         android:layout_marginTop="560dp"
         android:onClick="giraffeClick"
-
+        android:contentDescription="@string/animalHead"
         app:srcCompat="@drawable/b_giraffe" />
 
     <ImageView
@@ -125,7 +126,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="560dp"
         android:onClick="dogClick"
-
+        android:contentDescription="@string/animalHead"
         app:srcCompat="@drawable/b_dog" />
 
     <ImageView
@@ -135,7 +136,7 @@
         android:layout_gravity="end"
         android:layout_marginTop="560dp"
         android:onClick="toadClick"
-
+        android:contentDescription="@string/animalHead"
         app:srcCompat="@drawable/b_toad" />
 
     <ImageButton
@@ -145,8 +146,8 @@
         android:layout_gravity="top|end"
         android:background="@android:color/transparent"
         android:onClick="moveToMenu"
-
         android:scaleType="centerInside"
+        android:contentDescription="@string/toMenu"
         android:src="@drawable/b_to_menu" />
 
 </FrameLayout>
