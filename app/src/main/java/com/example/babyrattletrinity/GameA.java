@@ -74,6 +74,9 @@ public class GameA extends AppCompatActivity {
 
     public void moveToMenu(View view) {                                                             //ВЫХОД В МЕНЮ
         startActivity(moveToMenuIntent);
+        if (aModeMusic.isPlaying()) {
+            aModeMusic.stop();
+        }
     }
 
     public void flowerAnimation (ImageView colorOfFlower) {                                         //ФУНКЦИЯ АНИМАЦИИ ИСЧЕЗНОВЕНИЯ ЦВЕТКА
@@ -113,15 +116,16 @@ public class GameA extends AppCompatActivity {
         flowerAnimation(orangeFlower);
     }
 
-    @Override
-    public void onPause() {
-        super.onPause();
-        aModeMusic.stop();
+    public void onDestroy() {
+        super.onDestroy();
+        if (aModeMusic.isPlaying()) {
+            aModeMusic.stop();
+        }
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        aModeMusic.start();
-    }
+//    @Override
+//    public void onResume() {
+//        super.onResume();
+//        aModeMusic.start();
+//    }
 }

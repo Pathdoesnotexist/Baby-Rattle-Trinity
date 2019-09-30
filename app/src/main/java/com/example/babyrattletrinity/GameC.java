@@ -167,6 +167,9 @@ public class GameC extends AppCompatActivity {
 
     public void moveToMenu(View view) {                                                             //ВЫХОД В МЕНЮ
         startActivity(moveToMenuIntent);
+        if (cModeMusic.isPlaying()) {
+            cModeMusic.stop();
+        }
     }
 
     public void planetAnimation (ImageView planetType) {                                            //ФУНКЦИЯ АНИМАЦИИ ПО КЛИКУ
@@ -199,17 +202,18 @@ public class GameC extends AppCompatActivity {
     }
 
 
-    @Override
-    public void onPause() {
-        super.onPause();
-        cModeMusic.stop();
+    public void onDestroy() {
+        super.onDestroy();
+        if (cModeMusic.isPlaying()) {
+            cModeMusic.stop();
+        }
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        cModeMusic.start();
-    }
+//    @Override
+//    public void onResume() {
+//        super.onResume();
+//        cModeMusic.start();
+//    }
 
 }
 

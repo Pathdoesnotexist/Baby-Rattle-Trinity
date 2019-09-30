@@ -92,6 +92,9 @@ public class GameB extends AppCompatActivity {
 
     public void moveToMenu(View view) {                                                             //ВЫХОД В МЕНЮ
         startActivity(moveToMenuIntent);
+        if (bModeMusic.isPlaying()) {
+            bModeMusic.stop();
+        }
     }
                                                                                                     //sound activation on click
     public void cowClick(View view) {
@@ -131,16 +134,17 @@ public class GameB extends AppCompatActivity {
         toadV.start();
     }
 
-    @Override
-    public void onPause() {
-        super.onPause();
-        bModeMusic.stop();
+    public void onDestroy() {
+        super.onDestroy();
+        if (bModeMusic.isPlaying()) {
+            bModeMusic.stop();
+        }
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        bModeMusic.start();
-    }
+//    @Override
+//    public void onResume() {
+//        super.onResume();
+//        bModeMusic.start();
+//    }
 
 }

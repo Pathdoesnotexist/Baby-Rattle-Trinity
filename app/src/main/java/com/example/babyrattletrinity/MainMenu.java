@@ -41,6 +41,9 @@ public class MainMenu extends AppCompatActivity {
 
     public void startTheGame(View view) {
         startActivity(toGameIntent);
+        if (menuMusic.isPlaying()) {
+            menuMusic.stop();
+        }
     }
 
     public void startA(View view) {
@@ -64,15 +67,16 @@ public class MainMenu extends AppCompatActivity {
         toGameIntent = new Intent(MainMenu.this, GameC.class);
     }
 
-    @Override
-    public void onPause() {
-        super.onPause();
-        menuMusic.stop();
+    public void onDestroy() {
+        super.onDestroy();
+        if (menuMusic.isPlaying()) {
+            menuMusic.stop();
+        }
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        menuMusic.start();
-    }
+//    @Override
+//    public void onResume() {
+//        super.onResume();
+//        menuMusic.start();
+//    }
 }
